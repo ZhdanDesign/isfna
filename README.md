@@ -34,6 +34,7 @@ isfna pi https://github.com/<you>/<repo>
 - `isfna.bootstrap.json` — манифест bootstrap + зависимости
 - Python CLI `isfna` (TUI/wizard, detect, init, prompt)
 - `docs/DEPENDENCIES.md` — как работает рекурсивный dependency graph
+- `docs/TESTING.md` — локальные и контейнерные smoke-тесты
 
 ---
 
