@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "name": "isfna-core",
+  "sources": [],
+  "targets": {
+    "*": {
+      "skillPaths": ["skills"],
+      "promptPaths": ["prompts"],
+      "contextFiles": ["AGENTS.md"]
+    },
+    "pi": {
+      "skillPaths": ["skills"],
+      "promptPaths": ["prompts"],
+      "contextFiles": ["AGENTS.md"]
+    },
+    "codex": {
+      "skillPaths": ["skills"]
+    },
+    "claude": {
+      "skillPaths": ["skills"]
+    },
+    "opencode": {
+      "skillPaths": ["skills"]
+    }
+  },
+  "selfLearn": {
+    "entrySkill": "skills/master-init/SKILL.md",
+    "instructionTemplate": "Прочти репозиторий {repo} и начни с {entry_skill}. Затем найди зависимости через isfna.bootstrap.json, подтяни релевантные навыки для платформы {agent}, установи минимально необходимое и выдай отчёт: что установлено, как проверено, какие риски."
+  }
+}

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+REPO_DIR="${ISFNA_HOME:-$HOME/Projects/isfna}"
+export PYTHONPATH="$REPO_DIR/src:${PYTHONPATH:-}"
+
+exec python3 -m isfna.cli "$@"
